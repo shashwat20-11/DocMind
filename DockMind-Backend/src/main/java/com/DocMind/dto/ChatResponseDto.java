@@ -1,0 +1,20 @@
+package com.DocMind.dto;
+
+import java.util.List;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class ChatResponseDto {
+
+	private String answer;
+	private String conversationId;
+	private List<CitationDto> citation;
+	private Long responseTimeMs;
+}
